@@ -27,9 +27,9 @@ export default async function Home(props: IPropsParams<IPropLan>) {
     return (
         <>
             <Container width="30vw" display="flex" flexWrap="wrap" justifyContent="space-around">
-                <Link type="secondary" href="fetch-page" label="Fetch" />
-                <Link type="secondary" href="axios-page" label="Axios" />
-                <Link type="secondary" href="react-query-page" label="React Query" />
+                <Link type="secondary" href="fetch" label="Fetch" />
+                <Link type="secondary" href="axios" label="Axios" />
+                <Link type="secondary" href="react-query" label="React Query" />
             </Container>
         </>
     );

@@ -3,19 +3,15 @@
 import { Loading, Text, Title } from '@/components/Atoms';
 import { Container } from '@/components/Layout';
 import { Link } from '@/components/react-components-library/src/index';
-import { useTranslation } from '@/i18n/language/client';
 
 interface IProps {
-    lng: string;
-    createQueryString: Function;
-    pathname: string;
+    lng?: string;
     data: any;
     error: any;
 }
 
 export default function List(props: IProps) {
-    const { lng, pathname, createQueryString, data, error } = props;
-    const { t } = useTranslation(lng, 'translation');
+    const { lng, data, error } = props;
     // const [data, setData] = useState(null as any);
     // const [error, setError] = useState(false as boolean);
 
@@ -62,19 +58,14 @@ export default function List(props: IProps) {
                                         text={item.title}
                                         margin="xsmall"
                                     />
-                                    <Link
-                                        type="secondary"
-                                        key={item.id}
-                                        href={pathname + '?' + createQueryString(item.id)}
-                                        label={`${t('go-to')} ${item.id}`}
-                                    />
+                                    <Link type="secondary" key={item.id} href="/" label="Go to" />
                                 </Container>
                             );
                         })
                     )}
                 </>
             ) : (
-                <Loading lng={lng} />
+                <Loading />
             )}
         </Container>
     );

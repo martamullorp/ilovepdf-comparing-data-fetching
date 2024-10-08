@@ -2,3 +2,6 @@
 	path = src/components/react-components-library
 	url = git@github.com:ilovepdf/react-components-library.git
 	branch = main
+[submodule "src/styles/ilovepdf-css-commons"]
+	path = src/styles/ilovepdf-css-commons
+	url = git@github.com:marcogrossisas/ilovepdf-css-commons.git

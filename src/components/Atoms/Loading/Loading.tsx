@@ -2,19 +2,18 @@
 
 import './Loading.scss';
 
-import { ReactElement } from 'react';
 import {
     colorStyles,
-    textAlignOptions,
-    textTransformOptions,
     fontSizeOptions,
     fontWeightOptions,
     marginOptions,
-} from '@/types/layout-types';
-import { useTranslation } from '@/i18n/language/client';
+    textAlignOptions,
+    textTransformOptions,
+} from '@/types/Layout-types';
+import { ReactElement } from 'react';
 
 interface IProps {
-    lng: string;
+    lng?: string;
     customClass?: string;
     color?: colorStyles;
     textTransform?: textTransformOptions;
@@ -47,11 +46,10 @@ const Loading = (props: IProps): ReactElement => {
     if (textAlign) classNames.push('loading__align-'.concat(textAlign));
     if (fontWeight) classNames.push('loading__weight-'.concat(fontWeight));
     if (customClass) classNames.push(customClass);
-    const { t } = useTranslation(lng, 'translation');
 
     return (
         <h1 style={{ width }} className={classNames.join(' ')}>
-            {`${t('loading')}`}
+            Client loading
         </h1>
     );
 };
