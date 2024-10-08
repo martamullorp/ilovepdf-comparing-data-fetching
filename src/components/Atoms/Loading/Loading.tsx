@@ -25,17 +25,8 @@ interface IProps {
 }
 
 const Loading = (props: IProps): ReactElement => {
-    const {
-        lng,
-        width,
-        color,
-        textTransform,
-        textAlign,
-        fontSize,
-        fontWeight,
-        margin,
-        customClass,
-    } = props;
+    const { width, color, textTransform, textAlign, fontSize, fontWeight, margin, customClass } =
+        props;
 
     const classNames = ['loading'];
     classNames.push('loading-colors-'.concat(color || 'base-color'));

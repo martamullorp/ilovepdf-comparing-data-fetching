@@ -1,5 +1,3 @@
-'use client';
-
 import { Container } from '@/components/Layout';
 import { Link } from '@/components/react-components-library/src/index';
 import { useQuery } from 'react-query';
@@ -23,7 +21,7 @@ function ReactQueryList(props: IProps) {
     //     refetchInterval: 5000,
     // });
 
-    if (isLoading) return <div>Loading...</div>;
+    if (isLoading) return <div>Loading react-query...</div>;
     if (error) return <div>Error: {(error as any).message}</div>;
 
     return (
