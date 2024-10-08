@@ -40,7 +40,7 @@ const Loading = (props: IProps): ReactElement => {
 
     return (
         <h1 style={{ width }} className={classNames.join(' ')}>
-            Client loading
+            Loading...
         </h1>
     );
 };

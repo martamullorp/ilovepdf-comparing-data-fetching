@@ -11,17 +11,18 @@ function ReactQueryList(props: IProps) {
     const { lng } = props;
 
     const fetchData = async () => {
-        const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+        const response = await fetch('https://jsonplaceholder.typicode.com/photos');
         if (!response.ok) throw new Error('Error fetching data');
         return response.json();
     };
 
-    const { data, error, isLoading } = useQuery('dataKey', fetchData);
+    const { data, error, isLoading } = useQuery('photos', fetchData, {
+        refetchOnWindowFocus: false,
+    });
     // const { data, error, isLoading } = useQuery('photos', fetchPhotos, {
     //     refetchInterval: 5000,
     // });
 
-    if (isLoading) return <div>Loading react-query...</div>;
     if (error) return <div>Error: {(error as any).message}</div>;
 
     return (
