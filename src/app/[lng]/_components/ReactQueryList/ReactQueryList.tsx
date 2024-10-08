@@ -12,15 +12,15 @@ interface IProps {
 function ReactQueryList(props: IProps) {
     const { lng } = props;
 
-    const fetchData = async () => {
+    const getData = async () => {
         const response = await fetch('https://jsonplaceholder.typicode.com/photos');
         if (!response.ok) throw new Error('Error fetching data');
         return response.json();
     };
 
     const { data, error, isLoading } = useQuery({
-        queryKey: ['photos'],
-        queryFn: fetchData,
+        queryKey: ['data'],
+        queryFn: getData,
         // refetchInterval: 5000,
     });
 
