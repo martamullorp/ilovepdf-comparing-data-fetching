@@ -4,6 +4,7 @@ import { languages } from '@/i18n/language/i18n-config';
 import { useTranslation } from '@/i18n/language/server';
 import { dir } from 'i18next';
 import { Suspense } from 'react';
+import ReactQueryProvider from './_components/ReactQueryProvider/ReactQueryProvider';
 
 type Props = {
     children: React.ReactNode;
@@ -37,7 +38,9 @@ export default function Layout({ children, params: { lng } }: Props) {
                     alignItems="center"
                     minHeight="100vh"
                 >
-                    <Suspense fallback={<Loading lng={lng} />}>{children}</Suspense>
+                    <ReactQueryProvider>
+                        <Suspense fallback={<Loading lng={lng} />}>{children}</Suspense>
+                    </ReactQueryProvider>
                 </Container>
             </body>
         </html>

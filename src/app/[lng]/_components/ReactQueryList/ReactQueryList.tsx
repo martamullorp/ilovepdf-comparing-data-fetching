@@ -1,6 +1,8 @@
+'use client';
+
 import { Container } from '@/components/Layout';
 import { Link } from '@/components/react-components-library/src/index';
-import { useQuery } from 'react-query';
+import { useQuery } from '@tanstack/react-query';
 import List from '../List/List';
 
 interface IProps {
@@ -16,13 +18,13 @@ function ReactQueryList(props: IProps) {
         return response.json();
     };
 
-    const { data, error, isLoading } = useQuery('photos', fetchData, {
-        refetchOnWindowFocus: false,
+    const { data, error, isLoading } = useQuery({
+        queryKey: ['photos'],
+        queryFn: fetchData,
+        // refetchInterval: 5000,
     });
-    // const { data, error, isLoading } = useQuery('photos', fetchPhotos, {
-    //     refetchInterval: 5000,
-    // });
 
+    if (isLoading) return <div>Loading...</div>;
     if (error) return <div>Error: {(error as any).message}</div>;
 
     return (
