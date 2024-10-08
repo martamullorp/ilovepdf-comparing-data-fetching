@@ -1,0 +1,13 @@
+@import '../../../styles/variables/options';
+
+.title {
+    @include color-styles;
+
+    @include text-transforms;
+
+    @include title-size;
+
+    @include font-weight;
+
+    @include margin;
+}

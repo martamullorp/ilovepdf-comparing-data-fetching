@@ -1,0 +1,35 @@
+{
+    "title": "ILovePDF || Plantilla Next.js",
+    "to-home-page": "Tornar a la home",
+    "to-server-page": "Pàgina Estàtica",
+    "to-client-page": "Pàgina de Client",
+    "to-id-route": "Ruta traduida amb ID",
+    "languageSwitcher": "Cambiar de <1>{{lng}}</1> a: ",
+    "id-route": "Pàgina del ID",
+    "go-to": "Anar a",
+    "to-dashboard": "Anar al llistat",
+    "loading": "Carregant...",
+    "client": {
+        "title": "Pàgina renderizada en al costat del client",
+        "counter_one": "1 seleccionada",
+        "counter_other": "{{count}} seleccionats",
+        "counter_zero": "Cap seleccionat"
+    },
+    "server": {
+        "title": "pàgina estàtica renderitzada"
+    },
+    "id": {
+        "title": "Pàgina de ID per paràmetre"
+    },
+    "routes": {
+        "server": "pagina-estatica",
+        "client": "pagina-client",
+        "list": "pagina-amb-llista"
+    },
+    "not-found": "404 - No trobat",
+    "metadata": {
+        "pagina-estatica": "ILovePDF || Pàgina Estàtica",
+        "pagina-client": "ILovePDF || Pàgina de Client",
+        "pagina-amb-llista": "ILovePDF || Pàgina de llista"
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "title": "ILovePDF || Next.js template",
+    "to-home-page": "Back to home page",
+    "to-server-page": "Static Page",
+    "to-client-page": "Client Page",
+    "to-id-route": "Translated Route with ID",
+    "languageSwitcher": "Switch from <1>{{lng}}</1> to: ",
+    "id-route": "ID Route",
+    "go-to": "Go to",
+    "to-dashboard": "Back to list",
+    "loading": "Loading...",
+    "client": {
+        "title": "Page Rendered in Client side",
+        "counter_one": "one selected",
+        "counter_other": "{{count}} selected",
+        "counter_zero": "none selected"
+    },
+    "server": {
+        "title": "Page Rendered in Server side"
+    },
+    "id": {
+        "title": "Params ID page /dashboard"
+    },
+    "id-translated-route": {
+        "title": "Params ID page with translated route"
+    },
+    "routes": {
+        "server": "static-page",
+        "client": "client-page",
+        "list": "list-page"
+    },
+    "not-found": "404 - Not found",
+    "metadata": {
+        "static-page": "ILovePDF || Static Page",
+        "client-page": "ILovePDF || Client Page",
+        "list-page": "ILovePDF || List Page"
+    }
+}

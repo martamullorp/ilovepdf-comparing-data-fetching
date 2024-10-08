@@ -1,0 +1,12 @@
+{
+    "language": "en",
+    "ignorePaths": [
+        "src/**/*.json",
+        "public/**/*.json",
+        "routes-config.tsx",
+        "routes-script-config.js",
+        "next.config.js",
+        "package.json"
+    ],
+    "words": ["ilovepdf", "mynewrepo", "POCS", "testid"]
+}

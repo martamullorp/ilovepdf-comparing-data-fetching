@@ -1,0 +1,301 @@
+@import './global';
+
+@mixin color-styles {
+    &-colors {
+        &-base-color {
+            color: $base-color;
+        }
+
+        &-white {
+            color: $white;
+        }
+
+        &-red-color {
+            color: $red-color;
+        }
+
+        &-orange-color {
+            color: $orange-color;
+        }
+
+        &-green-color {
+            color: $green-color;
+        }
+
+        &-yellow-color {
+            color: $yellow-color;
+        }
+
+        &-grey-color {
+            color: $grey-color;
+        }
+    }
+}
+
+@mixin background-color-styles {
+    &-background {
+        &-base-color {
+            background: $base-color;
+        }
+
+        &-white {
+            background: $white;
+        }
+
+        &-red-color {
+            background: $red-color;
+        }
+
+        &-orange-color {
+            background: $orange-color;
+        }
+
+        &-green-color {
+            background: $green-color;
+        }
+
+        &-yellow-color {
+            background: $yellow-color;
+        }
+
+        &-grey-color {
+            background: $grey-color;
+        }
+    }
+}
+
+@mixin text-transforms {
+    &__transform {
+        &-uppercase {
+            text-transform: uppercase;
+        }
+
+        &-lowercase {
+            text-transform: lowercase;
+        }
+
+        &-capitalize {
+            text-transform: capitalize;
+        }
+
+        &-none {
+            text-transform: none;
+        }
+    }
+}
+
+@mixin text-align {
+    &__align {
+        &-center {
+            text-align: center;
+        }
+
+        &-left {
+            text-align: left;
+        }
+
+        &-right {
+            text-align: right;
+        }
+
+        &-justify {
+            text-align: justify;
+        }
+    }
+}
+
+@mixin text-size {
+    &__size {
+        &-xsmall {
+            font-size: 0.5rem;
+        }
+
+        &-small {
+            font-size: 1rem;
+        }
+
+        &-medium {
+            font-size: 1.5rem;
+        }
+
+        &-big {
+            font-size: 2rem;
+        }
+    }
+}
+
+@mixin title-size {
+    &__size {
+        &-xsmall {
+            font-size: 1.5rem;
+        }
+
+        &-small {
+            font-size: 2.5rem;
+        }
+
+        &-medium {
+            font-size: 3.5rem;
+        }
+
+        &-big {
+            font-size: 4.5rem;
+        }
+    }
+}
+
+@mixin display-content {
+    &__display {
+        &-flex {
+            display: flex;
+        }
+
+        &-none {
+            display: none;
+        }
+
+        &-inline {
+            display: inline;
+        }
+
+        &-block {
+            display: block;
+        }
+
+        &-inherit {
+            display: inherit;
+        }
+    }
+}
+
+@mixin flex-direction-content {
+    &__flex-direction {
+        &-row {
+            flex-direction: row;
+        }
+
+        &-row-reverse {
+            flex-direction: row-reverse;
+        }
+
+        &-column {
+            flex-direction: column;
+        }
+
+        &-column-reverse {
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+@mixin align-content {
+    &__align {
+        &-start {
+            align-items: start;
+        }
+
+        &-flex-start {
+            align-items: flex-start;
+        }
+
+        &-flex-end {
+            align-items: flex-end;
+        }
+
+        &-center {
+            align-items: center;
+        }
+
+        &-stretch {
+            align-items: stretch;
+        }
+
+        &-baseline {
+            align-items: baseline;
+        }
+    }
+}
+
+@mixin justify-content {
+    &__justify {
+        &-flex-start {
+            justify-content: flex-start;
+        }
+
+        &-flex-end {
+            justify-content: flex-end;
+        }
+
+        &-center {
+            justify-content: center;
+        }
+
+        &-space-between {
+            justify-content: space-between;
+        }
+
+        &-space-around {
+            justify-content: space-around;
+        }
+
+        &-space-evenly {
+            justify-content: space-evenly;
+        }
+    }
+}
+
+@mixin font-weight {
+    &__weight {
+        &-normal {
+            font-weight: normal;
+        }
+
+        &-bold {
+            font-weight: bold;
+        }
+
+        &-lighter {
+            font-weight: lighter;
+        }
+    }
+}
+
+@mixin margin {
+    &__margin {
+        &-xsmall {
+            margin: 5px;
+        }
+
+        &-small {
+            margin: 10px;
+        }
+
+        &-medium {
+            margin: 15px;
+        }
+
+        &-big {
+            margin: 20px;
+        }
+    }
+}
+
+@mixin padding {
+    &__padding {
+        &-xsmall {
+            padding: 5px;
+        }
+
+        &-small {
+            padding: 10px;
+        }
+
+        &-medium {
+            padding: 15px;
+        }
+
+        &-big {
+            padding: 20px;
+        }
+    }
+}

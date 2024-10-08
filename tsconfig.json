@@ -1,0 +1,54 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "paths": {
+            "@/*": ["*"],
+            "test": ["src/test/*"]
+        },
+        "target": "es2015",
+        "downlevelIteration": true,
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "module": "esnext",
+        "moduleResolution": "bundler",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "jsx": "preserve",
+        "incremental": true,
+        "sourceMap": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true,
+        "noFallthroughCasesInSwitch": true,
+        "allowImportingTsExtensions": true,
+        "types": ["jest", "jest-environment-jsdom", "@testing-library/jest-dom"],
+        "plugins": [
+            {
+                "name": "next"
+            }
+        ]
+    },
+    "ts-node": {
+        "compilerOptions": {
+            "module": "ESNext",
+            "moduleResolution": "Node"
+        }
+    },
+    "include": [
+        "next-env.d.ts",
+        "**/*.ts",
+        "**/*.tsx",
+        ".next/types/**/*.ts",
+        "pathTranslations.mjs"
+    ],
+    "exclude": ["node_modules"]
+}

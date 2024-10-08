@@ -1,0 +1,40 @@
+/* Remove default button lines for Safari and Firefox navigators */
+*:focus {
+    outline: none;
+}
+
+button:focus {
+    outline: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    margin: 0;
+}
+
+/* Color global variables */
+$white: #ffff;
+$base-color: black;
+$red-color: #ff6962;
+$yellow-color: #ffef32;
+$orange-color: #ff8c5b;
+$green-color: #328c28;
+$grey-color: #e5e5e5;
+
+/* Border radius */
+$base-border-radius: 12px;
+$alert-border-radius: 6px;
+$progress-border-radius: 8px;
+$routes-border-radius: 2px;
+
+/* Input properties */
+$input-border: 2px solid $grey-color;
+$input-border-hover: 2px solid $base-color;
+$product-light: var(--product-light);
+$product-primary: var(--product-primary);
+$product: var(--product-primary);
+$product-dark: var(--product-dark);
+
+a {
+    color: $product-primary;
+}

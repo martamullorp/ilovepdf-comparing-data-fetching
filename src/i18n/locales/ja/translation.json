@@ -1,0 +1,25 @@
+{
+    "title": "ILovePDF || Next.js テンプレート",
+    "to-home-page": "ホームページに戻ります to home",
+    "to-server-page": "サーバーページに移動 to static",
+    "to-client-page": "クライアントページに移動 to client",
+    "to-id-route": "動的ルートに移動 to ID",
+    "languageSwitcher": "Switch from <1>{{lng}}</1> to: ",
+    "id-route": "IDページ",
+    "go-to": "に行く",
+    "to-dashboard": "リストへ行く to list",
+    "loading": "読み込み中...",
+    "client": {
+        "title": "クライアント側でレンダリングされるページ",
+        "counter_one": "選択された 1 つ",
+        "counter_other": "{{count}} 選択された",
+        "counter_zero": "何も選択されていません"
+    },
+    "server": {
+        "title": "サーバー側でページがレンダリングされる"
+    },
+    "id": {
+        "title": "パラメータ別IDページ"
+    },
+    "not-found": "404 - ページが見つかりません"
+}

@@ -1,0 +1,11 @@
+@import '../../../styles/variables/options';
+
+.container-template {
+    @include align-content;
+
+    @include justify-content;
+
+    @include display-content;
+
+    @include flex-direction-content;
+}

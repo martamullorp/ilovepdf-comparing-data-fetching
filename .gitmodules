@@ -1,0 +1,4 @@
+[submodule "src/components/react-components-library"]
+	path = src/components/react-components-library
+	url = git@github.com:ilovepdf/react-components-library.git
+	branch = main

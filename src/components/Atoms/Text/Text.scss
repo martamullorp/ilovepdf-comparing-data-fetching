@@ -1,0 +1,15 @@
+@import '../../../styles/variables/options';
+
+.text {
+    @include color-styles;
+
+    @include text-transforms;
+
+    @include text-align;
+
+    @include text-size;
+
+    @include font-weight;
+
+    @include margin;
+}
